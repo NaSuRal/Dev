@@ -1,0 +1,112 @@
+body{
+    background: #474bff;
+    background: -webkit-linear-gradient(308deg, #474bff 0%, #bc48ff 100%);
+    background: linear-gradient(308deg, #474bff 0%, #bc48ff 100%);
+    backdrop-filter: blur(20px);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Empêche le scroll */
+}
+@font-face {
+    font-family: Glue;
+    src: url(./Super\ Glue.ttf);
+}
+h2 span:nth-child(1){
+    animation-delay: 0s;
+}
+h2 span:nth-child(2){
+    animation-delay: 0.2s;
+}
+h2 span:nth-child(3){
+    animation-delay: 0.4s;
+}
+h2 span:nth-child(4){
+    animation-delay: 0.6s;
+}
+h2 span:nth-child(5){
+    animation-delay: 0.8s;
+}
+h2 span:nth-child(6){
+    animation-delay: 1s;
+}
+h2 span:nth-child(7){
+    animation-delay: 1.2s;
+}
+h2 span:nth-child(8){
+    animation-delay: 1.4s;
+}
+h2 span:nth-child(9){
+    animation-delay: 1.6s;
+}
+.title h2{
+    font-size: 10em;
+    font-family: Glue;
+    color: #fff;
+}
+h2 span{
+    animation: animate 1.6s linear infinite;
+}
+@keyframes animate{
+    0%, 80%{
+        color: #ffffff;
+        text-shadow: none;
+
+    }
+    100%{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 10px #fff,
+                    0 0 20px #fff,
+                    0 0 40px #fff,
+                    0 0 80px #fff,
+                    0 0 120px #fff,
+                    0 0 160px #fff;
+    }
+}
+
+.cone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cone h3{
+    font-family: Glue;
+    font-size: 2em;
+    letter-spacing: 5px;
+    color: white;
+    border-bottom: 5px solid red;
+}
+.cone img{
+    width: 20%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Empêche le scroll */
+    position: relative;
+}
+
+.corner-image {
+    position: absolute;
+    width: 270px; /* Ajuste la taille selon tes besoins */
+    height: 270px; /* Ajuste la taille selon tes besoins */
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+}
+.bottom-right {
+    bottom: 0;
+    right: 0;
+}
